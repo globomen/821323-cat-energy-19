@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Ворожко](https://up.htmlacademy.ru/adaptive/19/user/821323).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
