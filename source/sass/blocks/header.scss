@@ -1,0 +1,126 @@
+.header {
+  width: $mobile-width;
+  margin: 0 auto;
+
+  font-family: $font-oswald;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-size: 320px 305px;
+  background-repeat: no-repeat;
+}
+
+.header__title {
+  margin: 0;
+  padding: 27px 20px 14px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.header__slogan {
+  margin: 0;
+  padding: 12px 60px 28px;
+
+  text-transform: uppercase;
+}
+
+.header__img {
+  width: 280px;
+  height: 270px;
+  padding-bottom: 15px;
+}
+
+.header__link {
+  padding: 12px 73px 7px;
+
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+
+  background-color: $green;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    width: $tablet-width;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #111111;
+
+    background-image: none;
+  }
+
+  .header__title {
+    padding: 57px 231px 20px 117px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .header__slogan {
+    padding: 20px 30px 20px 118px;
+  }
+
+  .header__img {
+    width: 709px;
+    height: 609px;
+    padding: 0 30px 0 29px;
+  }
+
+  .header__link {
+    position: absolute;
+    top: 287px;
+    left: 119px;
+
+    width: 245px;
+    padding: 16px 25px;
+
+    line-height: 20px;
+    color: #ffffff;
+
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: $desktop-width;
+    min-height: 696px;
+    // margin: -113px -50px 0 0;
+    // padding: 113px 50px 0 0;
+
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-size: 720px 696px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+  }
+
+  .header__title {
+    padding: 108px 760px 20px 120px;
+  }
+
+  .header__img {
+    position: absolute;
+    top: 142px;
+    left: 490px;
+
+    width: 552px;
+    height: 499px;
+  }
+
+  .header__link {
+    top: 456px;
+  }
+}

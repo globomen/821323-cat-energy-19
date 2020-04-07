@@ -3,17 +3,21 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" alt="Логотип HTML Academy: Кэт энерджи" width="150" height="150"
+      <img src="img/logo-mobile.svg" alt="Логотип HTML Academy: Кэт энерджи" width="192" height="38"
         class="page-header__logo-img">
     </a>
-    <nav class="main-nav">
-      <button type="button" class="main-nav__toggle">Открыть меню</button>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button type="button" class="main-nav__toggle">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
           <a>Главная</a>
@@ -32,6 +36,7 @@
     <section class="header">
       <h2 class="header__title">Функциональное питание для котов</h2>
       <p class="header__slogan">Занялся собой? Займись котом!</p>
+      <img src="img/index-can-mobile@1x.png" alt=">Подобрать программу" width="280" height="271" class="header__img">
       <a href="form.html" class="header__link button">Подобрать программу</a>
     </section>
     <section class="production">
@@ -77,10 +82,10 @@
       <div class="example__slider slider">
         <ul class="slider__list">
           <li class="slider__item">
-            <img src="https://via.placeholder.com/150x150" alt="Было до диеты" width="150" height="150" class="slider__img">
+            <img src="img/before-mobile@1x.png" alt="Было до диеты" width="320" height="240" class="slider__img">
           </li>
           <li class="slider__item">
-            <img src="https://via.placeholder.com/150x150" alt="Стало после диеты" width="150" height="150" class="slider__img">
+            <img src="img/after-mobile@1x.png" alt="Стало после диеты" width="320" height="240" class="slider__img">
           </li>
         </ul>
         <div class="slider__wrapper">
@@ -98,12 +103,12 @@
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="contacts__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858715787384!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1586083404965!5m2!1sru!2sru" width="1440" height="450" class="contacts__iframe"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858715787384!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1586083404965!5m2!1sru!2sru" width="320" height="362" class="contacts__iframe"></iframe>
       </div>
     </section>
     <div class="page-footer__bottom">
       <a class="page-footer__logo">
-        <img src="https://via.placeholder.com/150x150" alt="Логотип HTML Academy: Кэт энерджи" width="150" height="150"
+        <img src="img/logo-footer.svg" alt="Логотип HTML Academy: Кэт энерджи" width="128" height="24"
         class="page-footer__logo-img">
       </a>
       <div class="page-footer__social social">
@@ -120,14 +125,15 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-          <img src="https://via.placeholder.com/150x150" alt="Логотип HTML Academy" width="150" height="150"
+          <span class="copyright__title">HTML Academy</span>
+          <img src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34"
             class="copyright__img">
         </a>
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
