@@ -2,11 +2,11 @@
   width: $mobile-width;
   margin: 0 auto;
 
-  font-family: $font-oswald;
+  font-family: $font-family-2;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
-  color: #ffffff;
+  color: $font-color-4;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-size: 320px 305px;
@@ -24,26 +24,33 @@
 
 .header__slogan {
   margin: 0;
-  padding: 12px 60px 28px;
+  padding: 12px 60px 15px;
 
   text-transform: uppercase;
 }
 
 .header__img {
+  display: inline-block;
   width: 280px;
   height: 270px;
-  padding-bottom: 15px;
+  padding: 13px 20px 2px;
 }
 
 .header__link {
-  padding: 12px 73px 7px;
+  display: inline-block;
+  width: 280px;
+  padding: 11px 20px 11px;
 
   line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
 
-  background-color: $green;
+  background-color: $bg-color-4;
+
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,58 +64,61 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    color: #111111;
+    color: $font-color-2;
 
     background-image: none;
   }
 
   .header__title {
-    padding: 57px 231px 20px 117px;
+    padding: 57px 117px 20px;
 
     font-size: 60px;
     line-height: 60px;
   }
 
   .header__slogan {
-    padding: 20px 30px 20px 118px;
+    padding: 22px 30px 20px 118px;
   }
 
   .header__img {
     width: 709px;
     height: 609px;
-    padding: 0 30px 0 29px;
+    padding: 0 29px 0;
   }
 
   .header__link {
     position: absolute;
     top: 287px;
     left: 119px;
+    z-index: 2;
 
     width: 245px;
     padding: 16px 25px;
 
     line-height: 20px;
-    color: #ffffff;
-
-    box-sizing: border-box;
+    color: $font-color-4;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header {
     width: $desktop-width;
-    min-height: 696px;
-    // margin: -113px -50px 0 0;
-    // padding: 113px 50px 0 0;
+    min-height: 583px;
+    margin: -113px 0 0;
+    padding: 113px 0 0;
 
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-size: 720px 696px;
     background-repeat: no-repeat;
-    background-position: 100% 0%;
+    background-position: calc(100% + 70px) 0;
   }
 
   .header__title {
-    padding: 108px 760px 20px 120px;
+    padding: 108px 580px 20px 150px;
+  }
+
+  .header__slogan {
+    padding: 20px 580px 20px 145px;
   }
 
   .header__img {
@@ -122,5 +132,6 @@
 
   .header__link {
     top: 456px;
+    left: 145px;
   }
 }

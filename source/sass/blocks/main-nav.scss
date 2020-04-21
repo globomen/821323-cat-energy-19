@@ -12,7 +12,7 @@
   width: 65px;
   height: 65px;
 
-  background-color: #ffffff;
+  background-color: $bg-color-1;
 
   cursor: pointer;
   border: none;
@@ -28,8 +28,8 @@
   width: 24px;
   height: 2px;
 
-  background-color: #222222;
-  box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+  background-color: $bg-color-2;
+  box-shadow: 0 8px 0 0 $bg-color-2, 0 16px 0 0 $bg-color-2;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -48,7 +48,7 @@
     width: 24px;
     height: 2px;
 
-    background-color: #222222;
+    background-color: $bg-color-2;
   }
 
   &::before {
@@ -65,16 +65,8 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--closed .site-list {
-    display: none;
-  }
-
   .main-nav--nojs .main-nav__toggle {
     display: none;
-  }
-
-  .main-nav--nojs .site-list {
-    display: block;
   }
 }
 

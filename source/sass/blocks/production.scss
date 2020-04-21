@@ -16,7 +16,7 @@
   width: 280px;
   margin: 20px 20px 0 20px;
 
-  background-color: #f2f2f2;
+  background-color: $bg-color-5;
 }
 
 .production__item:last-child {
@@ -33,7 +33,7 @@
   width: 50px;
   height: 50px;
 
-  background-color: $green;
+  background-color: $bg-color-4;
   border-radius: 50%;
 }
 
@@ -67,12 +67,12 @@
   margin: 0;
   padding: 30px 20px 24px 91px;
 
-  font-family: $font-oswald;
+  font-family: $font-family-2;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #111111;
+  color: $font-color-2;
 }
 
 .production__text {
@@ -92,7 +92,7 @@
   width: 240px;
   height: 1px;
 
-  background-color: #d9d9d9;
+  background-color: $bg-color-6;
 }
 
 .production__link {
@@ -102,12 +102,12 @@
   width: 140px;
   padding: 20px 30px 24px 22px;
 
-  font-family: $font-oswald;
+  font-family: $font-family-2;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #111111;
+  color: $font-color-2;
 
   box-sizing: border-box;
 }

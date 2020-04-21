@@ -1,5 +1,5 @@
 .site-list {
-  font-family: $font-oswald;
+  font-family: $font-family-2;
 }
 
 .site-list__item a {
@@ -12,11 +12,21 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #111111;
+  color: $font-color-2;
 
-  background-color: #ffffff;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
+  background-color: $bg-color-1;
+  border-top: 1px solid $bg-color-3;
+  border-bottom: 1px solid $bg-color-3;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -42,7 +52,7 @@
 
         height: 2px;
 
-        background-color: #68b738;
+        background-color: $bg-color-4;
       }
     }
   }
@@ -53,7 +63,7 @@
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
-    color: #222222;
+    color: $font-color-3;
 
     border: none;
   }
@@ -67,13 +77,13 @@
   }
 
   .site-list__item--active::after {
-    background-color: #ffffff;
+    background-color: $bg-color-1;
   }
 
   .site-list__item a {
     font-size: 20px;
     font-weight: 400;
-    color: #ffffff;
+    color: $font-color-4;
 
     background-color: transparent;
   }
