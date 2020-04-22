@@ -1,12 +1,17 @@
 .header {
-  width: $mobile-width;
-  margin: 0 auto;
-
   font-family: $font-family-2;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
   color: $font-color-4;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 10px 20px;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-size: 320px 305px;
@@ -15,7 +20,7 @@
 
 .header__title {
   margin: 0;
-  padding: 27px 20px 14px;
+  padding: 17px 10px 14px;
 
   font-size: 36px;
   line-height: 36px;
@@ -24,7 +29,7 @@
 
 .header__slogan {
   margin: 0;
-  padding: 12px 60px 15px;
+  padding: 12px 10px 15px;
 
   text-transform: uppercase;
 }
@@ -33,13 +38,15 @@
   display: inline-block;
   width: 280px;
   height: 270px;
-  padding: 13px 20px 2px;
+  margin: 13px 0 3px;
+
+  vertical-align: middle;
 }
 
 .header__link {
   display: inline-block;
   width: 280px;
-  padding: 11px 20px 11px;
+  padding: 11px 10px 11px;
 
   line-height: 18px;
   text-align: center;
@@ -48,51 +55,50 @@
   text-decoration: none;
   color: inherit;
 
-  background-color: $bg-color-4;
-
-  box-sizing: border-box;
+  background-color: $bg-color-3;
 }
 
 @media (min-width: $tablet-width) {
   .header {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    width: $tablet-width;
-
     font-size: 20px;
     line-height: 20px;
     text-align: left;
     color: $font-color-2;
+  }
+
+  .header__wrapper {
+    position: relative;
+
+    width: $tablet-width;
+    padding: 10px 30px 499px;
 
     background-image: none;
   }
 
   .header__title {
-    padding: 57px 117px 20px;
+    padding: 47px 87px 20px;
 
     font-size: 60px;
     line-height: 60px;
   }
 
   .header__slogan {
-    padding: 22px 30px 20px 118px;
+    padding: 22px 88px 20px;
   }
 
   .header__img {
+    position: absolute;
+    top: 246px;
+    left: 29px;
+    z-index: -10;
+
     width: 709px;
     height: 609px;
-    padding: 0 29px 0;
   }
 
   .header__link {
-    position: absolute;
-    top: 287px;
-    left: 119px;
-    z-index: 2;
-
     width: 245px;
+    margin: 28px 0 0 89px;
     padding: 16px 25px;
 
     line-height: 20px;
@@ -101,29 +107,37 @@
 }
 
 @media (min-width: $desktop-width) {
-  .header {
-    width: $desktop-width;
-    min-height: 583px;
-    margin: -113px 0 0;
-    padding: 113px 0 0;
+  .header::before {
+    content: "";
 
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px);
+    z-index: -10;
+
+    width: 50%;
+    min-height: 696px;
+
+    background-color: $bg-color-7;
     background-image: url("../img/index-background-desktop@1x.jpg");
-    background-size: 720px 696px;
     background-repeat: no-repeat;
-    background-position: calc(100% + 70px) 0;
+  }
+
+  .header__wrapper {
+    width: $desktop-width;
+    padding: 10px 40px 188px;
   }
 
   .header__title {
-    padding: 108px 580px 20px 150px;
+    padding: 98px 580px 20px 80px;
   }
 
   .header__slogan {
-    padding: 20px 580px 20px 145px;
+    padding: 22px 80px 20px;
   }
 
   .header__img {
-    position: absolute;
-    top: 142px;
+    top: 16px;
     left: 490px;
 
     width: 552px;
@@ -131,7 +145,6 @@
   }
 
   .header__link {
-    top: 456px;
-    left: 145px;
+    margin: 33px 0 0 80px;
   }
 }

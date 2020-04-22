@@ -4,7 +4,7 @@
 
 .site-list__item a {
   display: block;
-  padding: 22px 20px;
+  padding: 23px 20px 22px;
 
   font-size: 20px;
   line-height: 20px;
@@ -15,8 +15,7 @@
   color: $font-color-2;
 
   background-color: $bg-color-1;
-  border-top: 1px solid $bg-color-3;
-  border-bottom: 1px solid $bg-color-3;
+  border-bottom: 1px solid $bg-color-4;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -47,12 +46,12 @@
 
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: 1px;
         left: 0;
 
         height: 2px;
 
-        background-color: $bg-color-4;
+        background-color: $bg-color-3;
       }
     }
   }
@@ -63,6 +62,7 @@
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
+    text-align: left;
     color: $font-color-3;
 
     border: none;
@@ -73,14 +73,14 @@
   .site-list__item {
     margin-left: 34px;
 
-    z-index: 10;
-  }
-
-  .site-list__item--active::after {
-    background-color: $bg-color-1;
+    &--active::after {
+      background-color: $bg-color-1;
+    }
   }
 
   .site-list__item a {
+    padding-bottom: 12px;
+
     font-size: 20px;
     font-weight: 400;
     color: $font-color-4;

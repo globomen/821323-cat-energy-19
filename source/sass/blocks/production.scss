@@ -174,14 +174,14 @@
 
     font-size: 16px;
     line-height: 24px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .production__item:nth-child(2) .production__text {
     padding-right: 315px;
-  }
-
- .production__text::after {
-    display: none;
   }
 
   .production__link {
