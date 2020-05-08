@@ -1,0 +1,227 @@
+.example {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 14px 20px 39px;
+
+  background-color: $bg-color-5;
+
+  min-height: 705px; // Временно, для сеток
+}
+
+.example__title {
+  margin: 0;
+  padding: 0 0 27px;
+
+  font-family: $font-family-2;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: $font-color-2;
+
+  display: none; // Временно, для сеток
+}
+
+.example__wrapper {
+  margin: 0 0 44px;
+
+  display: none; // Временно, для сеток
+}
+
+.example__text {
+  margin: 0;
+  padding: 0 0 23px;
+}
+
+.example__table {
+  width: 100%;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.example__table tbody {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.example__table-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.example__table-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  padding: 15px 0;
+
+  font-family: $font-family-2;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $font-color-2;
+
+  border: 1px solid $bg-color-8;
+  border-radius: 3px;
+}
+
+.example__table-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.example__table-value {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 87px;
+  margin: -10px 19px 0;
+
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+
+  background-color: $bg-color-5;
+}
+
+.example__desc {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 17px 0 0;
+
+  font-family: $font-family-2;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: $font-color-2;
+}
+
+.example__slider {
+  display: none; // Временно, для сеток
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    width: $tablet-width;
+    padding: 45px 30px 0;
+
+    background-color: $bg-color-1;
+
+    min-height: 1080px; // Временно, для сеток
+  }
+
+  .example__title {
+    padding: 0 0 64px;
+
+    font-size: 60px;
+  }
+
+  .example__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 708px;
+
+    display: none; // Временно, для сеток
+  }
+
+  .example__text {
+    padding: 0 10px 54px 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__table {
+    width: 366px;
+  }
+
+  .example__table-field {
+    width: 162px;
+    padding: 15px 0 18px;
+
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__table-title {
+    width: 366px;
+    padding: 0 10px 50px 24px;
+  }
+
+  .example__table-value {
+    margin: -10px 0 0;
+
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: $bg-color-1;
+
+    &--weight {
+      width: 114px;
+    }
+
+    &--time {
+      width: 142px;
+    }
+  }
+
+  .example__desc {
+    width: 195px;
+    margin: 0 0 auto;
+    padding: 10px 0 0;
+
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .example__desc-title {
+    display: inline-block;
+    padding: 0 0 10px;
+
+    vertical-align: middle;
+  }
+
+  .example__desc-price {
+    display: inline-block;
+    padding: 0 0 10px;
+
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    width: $desktop-width;
+    padding: 25px 40px 0;
+
+    min-height: 588px;; // Временно, для сеток
+  }
+
+  .example__title {
+    padding: 0 0 77px;
+  }
+
+  .example__wrapper {
+    width: 1240px;
+
+    background-color: $bg-color-5;
+  }
+}
