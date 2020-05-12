@@ -1,55 +1,134 @@
-.contacts {
+.contacts__wrapper {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 20px 25px;
+
+  background-color: $bg-color-5;
 }
 
 .contacts__title {
+  width: 50%;
+  margin: 0;
+
   font-family: $font-family-2;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
   color: $font-color-2;
 }
 
 .contacts__address {
+  width: 50%;
+  margin: 0;
+
   font-size: 14px;
   line-height: 20px;
 }
 
-.contacts__map iframe {
-  display: none;
-  width: 320px;
+.contacts__map {
+  position: relative;
+
+  width: $mobile-width;
   height: 362px;
 
-  border: none;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-position: center bottom;
+}
+
+.contacts__map::before {
+  content: "";
+
+  position: absolute;
+  top: 139px;
+  left: 135px;
+
+  width: 55px;
+  height: 53px;
+
+  background-image: url("../img/map-pin.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.contacts__map iframe {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding: 55px 68px 50px;
+  }
+
   .contacts__title {
+    width: 158px;
+    padding: 10px 0 10px;
+
     font-size: 20px;
     line-height: 25px;
   }
 
   .contacts__address {
+    width: 158px;
+    padding-top: 10px;
+
     font-size: 16px;
     text-align: right;
+
+    &--city {
+      display: block;
+
+      padding-top: 20px;
+
+    }
   }
 
-  .contacts__map iframe {
+  .contacts__map {
     width: $tablet-width;
     height: 396px;
+
+    background-image: url("../img/bg-map-tablet@1x.png");
+  }
+
+  .contacts__map::before {
+    top: 146px;
+    left: 325px;
+
+    width: 113px;
+    height: 106px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .contacts__title {
+  .contacts {
+    position: relative;
+  }
 
+  .contacts__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 40px;
+    z-index: 10;
+
+    width: 570px;
+    padding: 55px 78px 50px;
+
+    background-color: $bg-color-1;
   }
 
   .contacts__address {
     text-align: left;
   }
 
-  .contacts__map iframe {
+  .contacts__map {
     width: $desktop-width;
     height: 399px;
+
+    background-image: url("../img/bg-map-desktop@1x.png");
+  }
+
+  .contacts__map::before {
+    top: 150px;
+    left: 933px;
   }
 }
