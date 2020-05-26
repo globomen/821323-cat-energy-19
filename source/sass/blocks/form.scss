@@ -1,0 +1,155 @@
+.form {
+  width: 100%;
+  padding: 15px 0 15px;
+
+  font-family: $font-family-2;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $font-color-3;
+}
+
+.form__title {
+  margin: 0;
+  padding: 0 0 25px 20px;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.form__subtitle {
+  margin: 0;
+  padding: 0 30px 15px 20px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__group {
+  position: relative;
+
+  margin: 0;
+  padding: 25px 0 12px;
+
+  border: none;
+  border-bottom: 1px solid $bg-color-9;
+}
+
+.form__group-list {
+  @include list-reset ();
+}
+
+.form__group-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 12px;
+  padding: 0 20px;
+}
+
+.form__label {
+  position: relative;
+
+  padding-right: 15px;
+
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &--radio {
+    padding: 0 0 12px 47px;
+  }
+
+  &--radio::after,
+  &--radio::before {
+    content: "";
+
+    position: absolute;
+  }
+
+  &--radio::after {
+    top: -6px;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid $bg-color-6;
+    border-radius: 50%;
+  }
+
+  &--radio::before {
+    top: 3px;
+    left: 9px;
+
+    display: none;
+    width: 12px;
+    height: 12px;
+
+    background-color: $bg-color-3;
+    border-radius: 50px;
+  }
+}
+
+.form__input {
+  margin: 0;
+  padding: 10px 16px;
+
+  font-family: $font-family-2;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $font-color-1;
+
+  border: 1px solid $bg-color-4;
+
+  &--text {
+    width: 100%;
+
+    overflow: hidden;
+  }
+
+  &--radio {
+    display: none;
+  }
+}
+
+.form__input:checked + .form__label--radio::before {
+  display: block;
+}
+
+.form__group-title {
+  width: 222px;
+  margin: 0;
+  padding: 0 0 0 20px;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+
+  background-color: $bg-color-1;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 42px;
+    right: 0;
+    z-index: -1;
+
+    width: 100vw;
+    height: 3px;
+
+    background-color: $bg-color-3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+
+}

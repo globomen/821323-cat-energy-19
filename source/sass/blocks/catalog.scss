@@ -4,7 +4,7 @@
   flex-direction: column;
   width: $mobile-width;
   margin: 0 auto;
-  padding: 15px 0 35px;
+  padding: 15px 0;
 }
 
 .catalog__title {
@@ -30,7 +30,7 @@
   .catalog {
     flex-direction: row;
     width: $tablet-width;
-    padding: 56px 0 56px;
+    padding: 56px 0 26px;
   }
 
   .catalog__title {

@@ -5,6 +5,12 @@
   margin: 0 auto;
 }
 
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .page-footer__bottom {
   display: flex;
   flex-direction: column;
