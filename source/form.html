@@ -39,24 +39,24 @@
       <form action="https://echo.htmlacademy.ru" method="post" class="program-selection__form form">
         <h2 class="form__title">Подбор программы</h2>
         <p class="form__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <fieldset class="form__group">
-          <h3 class="form__group-title visually-hidden">Начальные данные</h3>
+        <fieldset class="form__group form__group--personal">
+          <h3 class="form__group-title visually-hidden">Персональные данные</h3>
           <ul class="form__group-list">
             <li class="form__group-item">
-              <label for="name" class="form__label">Имя:*</label>
+              <label for="name" class="form__label form__label--text">Имя:*</label>
               <input type="text" id="name" name="initial data" placeholder="Барсик" class="form__input form__input--text">
             </li>
             <li class="form__group-item">
-              <label for="weight" class="form__label">Вес (кг):*</label>
+              <label for="weight" class="form__label form__label--text">Вес (кг):*</label>
               <input type="text" id="weight" name="initial data" placeholder="7" class="form__input form__input--text">
             </li>
             <li class="form__group-item">
-              <label for="age" class="form__label">Возраст (лет):</label>
+              <label for="age" class="form__label form__label--text">Возраст (лет):</label>
               <input type="text" id="age" name="initial data" placeholder="7" class="form__input form__input--text">
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--program">
           <h3 class="form__group-title visually-hidden">Тип программы</h3>
           <ul class="form__group-list">
             <li class="form__group-item">
@@ -73,7 +73,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__group">
+        <fieldset class="form__group form__group--contacts">
           <h3 class="form__group-title">Контактные данные (владельца кота)</h3>
           <ul class="form__group-list">
             <li class="form__group-item">
